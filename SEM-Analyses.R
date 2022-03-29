@@ -52,8 +52,8 @@ semTable(list("Personality (M1)" = result1, "Personality (M2)" = result1b),
          fits = c("chisq", "rmsea", "srmr", "cfi", "tli"),
          table.float = TRUE, 
          longtable = FALSE, 
-         caption = "Veamos",
-         label = "t0")
+         caption = "Statistical Estimated Parameters for Personality CFA",
+         label = "t1")
 
 library(semPlot)
 semPaths(result, whatLabels = "std", layout = "tree", color = list(
@@ -94,12 +94,12 @@ result2b <- lavaan(model2, data=modelData, fixed.x=FALSE, missing="listwise", es
 summary(result2, fit.measures=TRUE);
 summary(result2b, fit.measures=TRUE);
 
-semTable(list("Personality (M1)" = result2, "Personality (M2)" = result2b),
+semTable(list("Leadership (M1)" = result2, "Leadership (M2)" = result2b),
          columns = c ("estse", "z", "p"), 
          fits = c("chisq", "rmsea", "srmr", "cfi", "tli"),
          table.float = TRUE, 
          longtable = FALSE, 
-         caption = "Veamos",
+         caption = "Statistical Estimated Parameters for Leadership CFA",
          label = "t2")
 
 semPaths(result2, whatLabels = "std", layout = "tree", color = list(
