@@ -60,7 +60,7 @@ semTable(list("Personality (M1)" = result1, "Personality (M2)" = result1b),
          label = "t1")
 
 library(semPlot)
-semPaths(result, whatLabels = "std", layout = "tree", color = list(
+semPaths(result1, whatLabels = "std", layout = "tree", color = list(
   lat = rgb(255, 100, 118, maxColorValue = 255),
   man = rgb(155, 253, 175, maxColorValue = 255)),
   mar = c(10, 5, 10, 5), intercepts = FALSE, residuls = FALSE, nCharNodes = 0)
