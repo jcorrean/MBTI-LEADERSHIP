@@ -1,6 +1,5 @@
 # We begin by loading the data
 library(readr)
-setwd("/home/jc/Documents")
 Rodrigo <- read_csv("Rodrigo.csv")
 
 # We focus on a specific set of observed variables
